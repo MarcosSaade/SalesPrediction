@@ -76,9 +76,14 @@ AnalisisVentas/
 
 ### 5. Predictive Modeling
 - **LightGBM**: For regions with sufficient data volume (Buenos Aires, Centro, Cuyo, Patagonia)
-- **Moving Average**: For regions with lower data volume (NEA, NOA)
+- **Moving Average**: For regions with lower data volume (NEA, NOA), with optimal n.
 - Hyperparameter optimization using Optuna with TimeSeriesSplit cross-validation
 - Evaluation metrics: RMSE, MAE
+- Empirical model choice by category.
+
+### 6. Dashboard
+- An interactive dashboard was created to see historical and predicted sales by region, product, and category.
+- Model errors by region can also be seen
 
 ## Key Findings
 
@@ -106,6 +111,8 @@ AnalisisVentas/
    - `EDA.ipynb`
    - `clustering.ipynb`
    - `modelado-predictivo.ipynb`
+  
+4. To run the dashboard, `python3 src/dashboard_app.py`
 
 ## Reproducibility
 
